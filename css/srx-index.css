@@ -1,0 +1,212 @@
+.headerTop {
+	position: absolute;
+	top: 20px; 
+	left: 20px;
+	width: 300px;
+	height: 70px;
+	line-height: 70px;
+	z-index: 9999;
+}
+
+@media (min-width: 768px){
+	.headerTop {
+	left: 50%; 
+	right: 50%;
+	width: 300px;
+	height: 70px;
+	margin: auto;
+	margin-left: -400px;
+	}
+}
+
+@media (min-width: 992px){
+	.headerTop {
+	left: 50%; 
+	right: 50%;
+	width: 300px;
+	height: 70px;
+	margin: auto;
+	margin-left: -500px;
+	}
+}
+
+@media (min-width: 1200px){
+	.headerTop {
+	left: 50%; 
+	right: 50%;
+	width: 300px;
+	height: 70px;
+	margin: auto;
+	margin-left: -570px;
+	}
+}
+
+.carousel-inner {
+	height: 300px;
+}
+
+.carousel-inner img{
+	width:100%;
+	height: 100%;
+}
+
+@media (min-width: 768px) {
+.carousel-inner {
+	height: 300px;
+}
+}
+
+@media (min-width: 992px) {
+.carousel-inner {
+	height: 500px;
+}
+}
+
+@media (min-width: 1200px) {
+.carousel-inner {
+	height: 500px;
+}
+}
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+.disply-table .nav-item {
+	float: left;
+}
+.navbar .show .disply-table {
+	display: flex;
+	text-align: left;
+}
+.service {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.service .title {
+	width: 226px;
+	height: 66px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/title_service.png);
+	clear: both;
+}
+.service .main-box {
+	padding-top: 30px;
+}
+.case {
+	padding-top: 100px;
+	padding-bottom: 40px;
+	text-align: center;
+	clear: both;
+}
+.case .title {
+	width: 226px;
+	height: 66px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/title_case.png) no-repeat center center;
+	clear: both;
+}
+.case img {
+	height: 100%;
+	width: 100%;
+}
+.case .list-item {
+	position: relative;
+	border: solid 1px #ccc;
+}
+.case .list-item .item-title {
+	position: absolute;
+	display: none;
+	bottom: 0px;
+	width: 100%;
+	line-height: 30px;
+	background-color: rgba(0, 0, 0, .5);
+	text-align: center;
+	color: #fff;
+	z-index: 9999;
+}
+.case .list-item a:hover >.item-title {
+	display: block;
+}
+.chuangtou {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	margin-left: auto;
+}
+.chuangtou img {
+	height: 100%;
+	width: 100%;
+}
+.chuangtou .title {
+	width: 226px;
+	height: 66px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/title_chuangtou.png);
+	clear: both;
+}
+.chuangtou .main-box {
+	padding-top: 30px;
+	padding-bottom: 80px;
+}
+.aboutus {
+	padding-top: 100px;
+	padding-bottom: 40px;
+	clear: both;
+}
+.aboutus img {
+	width: 100%;
+	height: 200px;
+}
+.aboutus .list-item {
+	position: relative;
+	border: solid 1px #ccc;
+}
+.aboutus .list-item .item-content {
+	padding: 10px;
+}
+.aboutus .list-item .item-content ol {
+	padding: 5px 5px 0px 20px;
+}
+.aboutus .list-item .item-content ol li {
+	width: 100%;
+}
+.aboutus .list-item .item-content ol li a {
+}
+.aboutus .list-item .item-content ol li>a.highlight {
+	font-weight: 700;
+}
+.aboutus .title {
+	width: 226px;
+	height: 66px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/title_aboutus.png) no-repeat center center;
+	clear: both;
+}
+.partner {
+	padding-top: 100px;
+	padding-bottom: 40px;
+	clear: both;
+}
+.partner .title {
+	width: 226px;
+	height: 66px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/title_partner.png) no-repeat center center;
+	clear: both;
+}
+.partner img {
+	height: 100%;
+	width: 100%;
+}

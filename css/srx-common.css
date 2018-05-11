@@ -1,0 +1,30 @@
+body{
+	line-height: 1.6em;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	color: #007627;
+	text-decoration: none;
+}
+
+.bg-f8f8f8{
+	background-color: #f8f8f8;
+}
+.padding-0{
+	padding: 0;
+}
+.disply-table{
+	display: table;
+	text-align: center;
+	margin: 0 auto;
+}
+.m-10{
+	margin:10px;
+}
+.p-tb-10{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
