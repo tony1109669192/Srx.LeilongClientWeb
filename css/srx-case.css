@@ -1,0 +1,49 @@
+.channel-nav {
+}
+
+.channel-nav ul span{
+	float: right;
+}
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+.disply-table .nav-item {
+	float: left;
+}
+
+
+.channel-nav li{
+	display:inline;
+}
+
+.case {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	clear: both;
+}
+.case img {
+	height: 100%;
+	width: 100%;
+}
+.case .list-item {
+	position: relative;
+	border: solid 1px #ccc;
+}
+.case .list-item .item-title {
+	position: absolute;
+	display: none;
+	bottom: 0px;
+	width: 100%;
+	line-height: 30px;
+	background-color: rgba(0, 0, 0, .5);
+	text-align: center;
+	color: #fff;
+	z-index: 9999;
+}
+.case .list-item a:hover >.item-title {
+	display: block;
+}
