@@ -1,0 +1,28 @@
+@import 'var.scss';
+
+.selected {
+	border: 1px solid $highlight-color;
+	font: {
+		family: fantasy;
+		size: 30em;
+		weight: bold;
+  	}
+		
+  .redbox {
+    background-color: #ff0000;
+    color: #000000;
+  }
+}
+
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+  body.firefox & { font-weight: normal; }
+}
+
+#main {
+  color: black;
+  &-sidebar { border: 1px solid; }
+}
