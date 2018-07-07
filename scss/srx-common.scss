@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+html, body {
+	font-size: 14px;
+	line-height: 1.6rem;
+	color: #666666;
+	font-family: 'Helvetica Neue','Hiragino Sans GB',stheiti,'Microsoft Yahei','微软雅黑',tahoma,sans-serif;
+	letter-spacing:0.1rem;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #007627;
+	text-decoration: none;
+}
+.bg-f8f8f8 {
+	background-color: #f8f8f8;
+}
+.padding-0 {
+	padding: 0;
+}
+.disply-table {
+	display: table;
+	text-align: center;
+	margin: 0 auto;
+}
+.m-10 {
+	margin: 10px;
+}
+.p-tb-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.breadcrumb {
+	background-color: transparent;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.channel-item-list {
+}
+.channel-item-list .media{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.125);
+}
+.channel-item-list .media-left{
+	padding-top: 10px;
+}
+.channel-item-list .media-body{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.content-container{
+	padding: 20px;
+}
+.content-container .title{
+	line-height: 40px;
+	text-align: center;
+	font-weight: 700;
+	font-size:1.7rem;
+}
+.content-container .content-info{	
+	line-height: 40px;
+	text-align: center;
+	font-size:0.8rem;
+	background: rgba(0, 0, 0, 0.08);
+	margin:10px 0;
+}
+
+.content-container .content-body .content-video{	
+	width: 100%;
+		height: 300px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.05);
+}
+.content-container .content-body .content-video video{
+  width: 100%;
+    height: 100%;
+}
+.card{
+	border:none;
+}
+@media (min-width: 768px){
+	.content-container .content-body .content-video{	
+		width: 500px;
+		height: 400px;
+		display: block;
+		margin: 20px auto;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.05);
+	}
+}
+
+@media (min-width: 992px){
+	.content-container .content-body .content-video{	
+		width: 500px;
+		height: 400px;
+		display: block;
+		margin: 20px auto;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.05);
+	}
+}
+
+@media (min-width: 1200px){
+	.content-container .content-body .content-video{	
+		width: 500px;
+		height: 400px;
+		display: block;
+		margin: 20px auto;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.05);
+	}
+}
+
+.footer{
+	padding: 3rem;
+	background-color: #333333;
+}
+.footer .container{
+	color: #DFDFDF;
+}
