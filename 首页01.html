@@ -1082,7 +1082,8 @@ Site.initSimpleTextContent( 326,0);
 Site.bannerV2.init({
 	"_open":true,
 	"data":[
-		{"tip":"",
+		{
+			"tip":"",
 			 "desc":"",
 			 "imgWidth":1920,
 			 "imgHeight":800,
@@ -1090,13 +1091,15 @@ Site.bannerV2.init({
 			 "i":"AD0IorryBxAEGAAg85TA1gUolYGL9QYwgA84oAY",
 			 "src":"images/01/AD0IorryBxAEGAAg85TA1gUolYGL9QYwgA84oAY.png"
 			},
-		{"tip":"",
+		{
+			"tip":"",
 			   "desc":"",
 			   "imgWidth":1920,
 			   "imgHeight":800,
 			   "ot":0,
 			   "i":"AD0IorryBxAEGAAg9ZTA1gUo3PvS_QUwgA84oAY",
-			   "src":"images/01/AD0IorryBxAEGAAg9ZTA1gUo3PvS_QUwgA84oAY.png"}
+			   "src":"images/01/AD0IorryBxAEGAAg9ZTA1gUo3PvS_QUwgA84oAY.png"
+		}
 	],
 	"width":1920,
 	"cusBannerWidth":0,
@@ -1200,7 +1203,47 @@ Site.initSimpleTextContent( 369,0);jzUtils.run({'name':'moduleAnimation.subscrib
 Site.initSimpleTextContent( 370,0);jzUtils.run({'name':'moduleAnimation.subscribe', 'callMethod':true}, {"id":370,"contentAnimationList":[],"list":[{"t":3,"s":0.6,"d":0.0}]});
 
 Site.loadPhotoList(371, 2, true, 1,'listPhotos');
-jzUtils.run({ "name": "ImageEffect.FUNC.BASIC.Init", "callMethod": true }, {"moduleId": 371, "imgEffOption": {"effType":1,"borderType":false,"borderColor":"#000","borderWidth":1,"borderStyle":1,"style":88,"fullMaskCusBg":false,"fullMaskCusDisc":false,"halfMaskCusBg":false,"halfMaskCusDisc":false,"fullMaskOpenDisc":false}, "tagetOption": {"nameHidden":false,"nameWordWrap":false,"targetParent":"photoForm","target":"imgDiv","picScale":2}, "callback": Site.createImageEffectContent_photo, "callbackArgs": []});jzUtils.run({'name':'moduleAnimation.subscribe', 'callMethod':true}, {"id":371,"contentAnimationList":[],"list":[{"t":3,"s":0.6,"d":0.0}]});
+jzUtils.run({
+	"name": "ImageEffect.FUNC.BASIC.Init",
+	"callMethod": true
+}, {
+	"moduleId": 371,
+	"imgEffOption": {
+		"effType": 1,
+		"borderType": false,
+		"borderColor": "#000",
+		"borderWidth": 1,
+		"borderStyle": 1,
+		"style": 88,
+		"fullMaskCusBg": false,
+		"fullMaskCusDisc": false,
+		"halfMaskCusBg": false,
+		"halfMaskCusDisc": false,
+		"fullMaskOpenDisc": false
+	},
+	"tagetOption": {
+		"nameHidden": false,
+		"nameWordWrap": false,
+		"targetParent": "photoForm",
+		"target": "imgDiv",
+		"picScale": 2
+	},
+	"callback": Site.createImageEffectContent_photo,
+	"callbackArgs": []
+});
+	
+jzUtils.run({
+			'name': 'moduleAnimation.subscribe',
+			'callMethod': true
+		}, {
+			"id": 371,
+			"contentAnimationList": [],
+			"list": [{
+				"t": 3,
+				"s": 0.6,
+				"d": 0.0
+			}]
+		});
 
 
 Site.initSimpleTextContent( 372,0);
@@ -1210,68 +1253,133 @@ Site.initSimpleTextContent( 375,0);
 
 	Site.initPage();	// 这个要放在最后，因为模块组初始化时会把一些模块隐藏，导致没有高度，所以要放最后执行
 	
-	
-	//Site.triggerGobalEvent("siteReadyLoad");
-	
-	
 
 });
 
 
-var _lcid = 2052,
-	_siteDomain = '//ql16536173.icoc.bz',
-	_resRoot = '//0.ss.faisys.com',
-	_colId = 2,
-	_fromColId = -1,
-	_designAuth = false,
-	_manageMode = false,
-	_oem = false,
-	_siteVer = 10,
-	_manageStatus = false;
+var _customBackgroundData = {
+	"styleDefault": true,
+	"s": true,
+	"h": false,
+	"r": 3,
+	"ps": 0,
+	"o": "",
+	"sw": -1,
+	"swt": 0,
+	"e": 0,
+	"wbh": -1,
+	"wbw": -1,
+	"clw": -1,
+	"crw": -1,
+	"wbws": -1,
+	"wbs": 0,
+	"id": "",
+	"p": "",
+	"bBg": {
+		"y": 0,
+		"r": 3,
+		"ps": 0,
+		"f": "",
+		"p": "",
+		"c": ""
+	},
+	"cBg": {
+		"y": 0,
+		"r": 3,
+		"ps": 0,
+		"f": "",
+		"p": "",
+		"c": ""
+	},
+	"cmBg": {
+		"y": 0,
+		"r": 3,
+		"ps": 0,
+		"f": "",
+		"p": "",
+		"c": ""
+	},
+	"bm": {},
+	"cm": {},
+	"cp": {
+		"y": 0
+	}
+};          //自定义的数据
 
-var _jzProUrl = '';
-var _flyerManageDomain = '';
-var _siteAdmDomain = '',
-	_jzHomeUrl = '';
 	
-//多网站聚合页地址
-Fai.top._jzAllSiteDomain = _oem ? 'i.vip.webportal.top' : 'i.jz.fkw.com';
 
-
-	_jzProUrl = 'jz.fkw.com';
-	_flyerManageDomain = 'cdm.faisco.cn';
-	_siteAdmDomain = 'faisco.cn';
-	_jzHomeUrl = 'jz.faisco.com';
-
-_Global._webRightBar = false;
-var _isMemberLogin = false;// 会员是否登陆了
-var _noCover = 0; 			// 隐藏弹窗遮罩层
-_Global._footerHidden = false;	// 底部是否隐藏 原因：需要判断有些底部js方法是否运行 true:隐藏；false: 显示
-_Global._footerHiddenAllowed = false;	
-
-
-
-
-
-var _navPositionFixTop =  false;        		  // 导航栏固定到顶部
-
-var nav2SubMenu=[];
-var nav103SubMenu=[];
-var nav104SubMenu=[];
-var nav105SubMenu=[];
-var nav106SubMenu=[];
-
-
-var _useBannerVersionTwo = true; //使用横幅2.0的标志
-var _customBackgroundData = {"styleDefault":true,"s":true,"h":false,"r":3,"ps":0,"o":"","sw":-1,"swt":0,"e":0,"wbh":-1,"wbw":-1,"clw":-1,"crw":-1,"wbws":-1,"wbs":0,"id":"","p":"","bBg":{"y":0,"r":3,"ps":0,"f":"","p":"","c":""},"cBg":{"y":0,"r":3,"ps":0,"f":"","p":"","c":""},"cmBg":{"y":0,"r":3,"ps":0,"f":"","p":"","c":""},"bm":{},"cm":{},"cp":{"y":0}};          //自定义的数据
-
+var _pageBannerData = {
+	"ce": {},
+	"pl": 0,
+	"s": 0,
+	"i": 4000,
+	"a": 1500,
+	"h": false,
+	"o": false,
+	"t": 1,
+	"p": 0,
+	"pt": 0,
+	"bt": 1,
+	"ws2": false,
+	"l": [],
+	"f": {},
+	"n": [],
+	"c": 3,
+	"at": 0,
+	"tt": false,
+	"ws": false
+};					// 当前页面的自定义数据（页面独立样式设置）
 	
-
-var _pageBannerData = {"ce":{},"pl":0,"s":0,"i":4000,"a":1500,"h":false,"o":false,"t":1,"p":0,"pt":0,"bt":1,"ws2":false,"l":[],"f":{},"n":[],"c":3,"at":0,"tt":false,"ws":false};					// 当前页面的自定义数据（页面独立样式设置）
 var _bannerData = _pageBannerData;
 
 
-	var _pageBannerV2Data = {"bl":[{"t":1,"i":"AD0IorryBxAEGAAg85TA1gUolYGL9QYwgA84oAY","ot":0,"p":"images/01/AD0IorryBxAEGAAg85TA1gUolYGL9QYwgA84oAY.png","w":1920,"h":800,"tp":"//16555298.s61i.faiusr.com/4/AD0IorryBxAEGAAg85TA1gUolYGL9QYwgA84oAY!100x100.png","du":"//16555298.s61i.faiusr.com/0/AD0IorryBxAEGAAg85TA1gUolYGL9QYwgA84oAY?f=AD0IorryBxAEGAAg85TA1gUolYGL9QYwgA84oAY.png&v=","e":0,"u":""},{"t":1,"i":"AD0IorryBxAEGAAg9ZTA1gUo3PvS_QUwgA84oAY","ot":0,"p":"images/01/AD0IorryBxAEGAAg9ZTA1gUo3PvS_QUwgA84oAY.png","w":1920,"h":800,"tp":"//16555298.s61i.faiusr.com/4/AD0IorryBxAEGAAg9ZTA1gUo3PvS_QUwgA84oAY!100x100.png","du":"//16555298.s61i.faiusr.com/0/AD0IorryBxAEGAAg9ZTA1gUo3PvS_QUwgA84oAY?f=AD0IorryBxAEGAAg9ZTA1gUo3PvS_QUwgA84oAY.png&v=","e":0,"u":""}],"s":1,"bt":4,"at":0,"i":4000,"a":1500,"blh":{"t":0},"blw":{"t":0},"bzb":{"t":0,"o":100,"c":""},"bla":0,"ble":{"t":0,"at":0},"blpe":0};					// 横幅2.0当前页面的自定义数据（页面独立样式设置）
+	var _pageBannerV2Data = {
+	"bl": [{
+		"t": 1,
+		"i": "AD0IorryBxAEGAAg85TA1gUolYGL9QYwgA84oAY",
+		"ot": 0,
+		"p": "images/01/AD0IorryBxAEGAAg85TA1gUolYGL9QYwgA84oAY.png",
+		"w": 1920,
+		"h": 800,
+		"tp": "",
+		"du": "",
+		"e": 0,
+		"u": ""
+	}, {
+		"t": 1,
+		"i": "AD0IorryBxAEGAAg9ZTA1gUo3PvS_QUwgA84oAY",
+		"ot": 0,
+		"p": "images/01/AD0IorryBxAEGAAg9ZTA1gUo3PvS_QUwgA84oAY.png",
+		"w": 1920,
+		"h": 800,
+		"tp": "",
+		"du": "",
+		"e": 0,
+		"u": ""
+	}],
+	"s": 1,
+	"bt": 4,
+	"at": 0,
+	"i": 4000,
+	"a": 1500,
+	"blh": {
+		"t": 0
+	},
+	"blw": {
+		"t": 0
+	},
+	"bzb": {
+		"t": 0,
+		"o": 100,
+		"c": ""
+	},
+	"bla": 0,
+	"ble": {
+		"t": 0,
+		"at": 0
+	},
+	"blpe": 0
+};					// 横幅2.0当前页面的自定义数据（页面独立样式设置）
 var _bannerV2Data = _pageBannerV2Data;
 
 var _siteDemo = false;
