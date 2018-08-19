@@ -20,6 +20,10 @@ body a {
 	font-family: 微软雅黑;
 	color: #222222;
 }
+body a:hover{
+	color:#FC0000;
+	
+}
 #memberBar {
 	width: 1200px;
 }
