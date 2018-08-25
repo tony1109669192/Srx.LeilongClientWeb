@@ -648,101 +648,13 @@
 <script type="text/javascript">
 
 Fai.top = window;
-var _Global = {},
-	bgmCloseToOpen = false,
-	statId = -1,
-	_debug = false,
-	_isPre = false,
-	_devMode = false,
-	_colOtherStyleData = {"independentList":[],"hh":false,"fh":false,"y":0,"h":0,"layout4Width":0,"layout5Width":0},						// 当前页面的数据    
-	_templateOtherStyleData = {"independentList":[],"hh":false,"fh":false,"h":580,"y":0,"layout4Width":0,"layout5Width":0},			// 全局的数据
-	_allowedHtmlUrl = true,
-	_openHtmlUrl = false,
-	_advertType = 1,
-	_isBUser = false,
-	manageClose = false,
-	_proSiteQueryStr = '';//by jser
-	httpStr = 'https://';
-	_Global.visitorAdData = {};
-	vipExpireTime = '';
-	siteVipBeforeExpireDays = -1000;
-
-
-	
-	var _homeHost = "www.fkw.com";
-
-
-var _templateDefLayout = {BANNER_NAV:0,NAV_FLOAT:1,LEFT_NAV_BANNER_RIGHT_HIDE:3,LEFT_NAV_CENTER_BANNER_RIGHT_HIDE:4,LEFT_BANNER_NAV_RIGHT_HIDE:5,LEFT_NAV_EXPEND_CENTER_BANNER:6,CENTER_TOP_BANNER_RIGHT_HIDE:7,LEFT_HIDE_CENTER_TOP_BANNER:8,NAV_FLOAT_ON_BANNER:9,NAV_BANNER:10}; 
+var _Global = {};
 
 $(function() {
 	
-		Site.ajaxLoadModuleDom(103, 0, {"_ajaxLoadModuleList":[],"_partDomInfoList":[],"fullUrl":"https://fkwhcm01.jz.fkw.com/col.jsp?id=103"});
-	
-	Site.showOrHideMailBox();
-		
 
-	Site.loginSiteInit('fkwhcm01','fkw.com', false,"");
-
-	//topBarMember 
-	
-	
-
-	
-
-	if(Fai.top._manageMode) {
-		Fai.top._bigAdOptions = {
-			"sevenCelebration" : false,
-			"sevenKnowMoreUrl" : "http://jz.fkw.com/alliance.html",
-			"sevenQQUrl": "https://i.fkw.com/count/agentCount.jsp?s=1",
-			"dailyImgUrl": "http://i.fkw.com/portal.jsp#appId=shop&tab=0?fromPageId=3"
-		}
-	}
-
-	if(false) {
-		if(Fai.top.$(".drawLottery").length == 0){
-			Site.popBigAdWindow();	// 弹出免费版引导付费广告
-		}
-	}
-
-	// 绑定退出事件
-	Site.bindBeforeUnloadEvent(false, false, false);
-
-	Site.initTemplateLayout(_templateDefLayout.NAV_FLOAT, true, false );
-	// spider统计
-	
-
-
-
-	
-	
-	// ajax统计
-	Site.total({colId:103, pdId:-1, ndId:-1, sc:0, rf:"https://fkwhcm01.jz.fkw.com/", statId:statId});
-	//保留旧用户的初始化版式区域4 和区域5 中，区域4的padding-right空间
-	Site.colLayout45Width();
-	//各个模块inc吐出脚本
-
-	$('#sitetips').find('.tiptoolbtn').append("<a hidefocus='true' href='//fkwenhua05.jz.fkw.com' class='tlinkPrev1' title='查看上一个模板'>上一个</a><span class='siteDemoIndexText'><font class='siteDemoCurIndexText'>18</font>/18</span><a hidefocus='true' href='javascript:;' class='tlinkNext2' title='已到后一个模板'>下一个</a><a id='copyTemplateBtn' href='//jz.fkw.com/reg.html?clone=16555298&templateId=998&_ta=25' target='_blank' class='tbutton' style='font-weight:bold;' title='点击复制网站，让您立即拥有和模板一样的网站，复制后您还可以随意更换主题、修改横幅、编辑内容等。' onclick='Site.logClick(136);'><span class='styleSettingButton siteDemoBtn_active siteDemoBtn'>复制网站</span></a><a hidefocus='true' href='//jz.fkw.com/model.html?_ta=25' target='_blank' class='tlinkMore  siteDemoBtn' title='点击查看更多模板网站'>更多模板</a>");
-Site.initCorpTitleJump();
-Site.initCorpTitle();
-
-Site.initSimpleTextContent( 315,0);
-Site.initSimpleTextContent( 316,0);
-Site.bannerV2.init({"_open":true,"data":[{"tip":"","desc":"","imgWidth":1920,"imgHeight":304,"ot":0,"i":"AD0IorryBxACGAAg3vu92QUoqsvRigIwgA84sAI","src":"//16555298.s61i.faiusr.com/2/AD0IorryBxACGAAg3vu92QUoqsvRigIwgA84sAI.jpg"}],"width":1920,"cusBannerWidth":0,"widthType":0,"height":300,"playTime":4000,"animateTime":1500,"from":"banner","btnType":1,"wideScreen":true,"backgroundType":0,"backgroundColor":"","backgroundOpacity":100});
-$LAB.script("js/01/moduleAnimation.min.js").wait(function(){				
-				jzUtils.trigger({
-					"name": "moduleAnimation.subscribe",
-					"base":Site
-				});				
-				
-				jzUtils.run({
-					"name": "moduleAnimation.scroll",
-					"base":Site
-				});
-				jzUtils.run({
-					"name": "moduleAnimation.publish",
-					"base":Site
-				});
-			});		Site.initSimpleTextContent( 378,0);jzUtils.run({'name':'moduleAnimation.subscribe', 'callMethod':true}, {"id":378,"contentAnimationList":[],"list":[{"t":3,"s":0.6,"d":0.0}]});
+Site.initSimpleTextContent( 378,0);
+jzUtils.run({'name':'moduleAnimation.subscribe', 'callMethod':true}, {"id":378,"contentAnimationList":[],"list":[{"t":3,"s":0.6,"d":0.0}]});
 
 Site.initSimpleTextContent( 379,0);jzUtils.run({'name':'moduleAnimation.subscribe', 'callMethod':true}, {"id":379,"contentAnimationList":[],"list":[{"t":3,"s":0.6,"d":0.0}]});
 
@@ -815,17 +727,6 @@ Site.initSimpleTextContent( 374,0);
 Site.initSimpleTextContent( 375,0);
 
 
-
-	Site.ajaxLogDog();
-
-	//收集浏览器信息，统计dog
-	Site.sendBrowerInfo(false);
-	
-	
-
-	//如果有首页弹窗的话，需要先打开首页弹窗
-	
-
 	Site.initPage();	// 这个要放在后，因为模块组初始化时会把一些模块隐藏，导致没有高度，所以要放后执行
 	
 	
@@ -834,33 +735,12 @@ Site.initSimpleTextContent( 375,0);
 	
 	setTimeout(afterModuleLoaded, 0);
 
-	
-
-	
-	
-
-	Site.triggerGobalEvent("siteReadyLoad");
-	
-	
-	
-	
 
 });
 
 function afterModuleLoaded() {
 	
 	Site.initPage2();
-Site.initBackToTopTool(false,false,true,'回到顶部','special_03');
-	
-
-	
-	
-	
-	
-	
-	
-
-	
 } // afterModuleLoaded end
 
 var _lcid = 2052,
@@ -995,30 +875,23 @@ var _templateBannerId = 0;
 </script> 
 	
 <script type="text/javascript">
-
-	$LAB.script("//1.ss.faisys.com/js/moduleAnimation.min.js?v=201807021153")
-			.wait(function(){
-				
+$LAB.script("../js/01/moduleAnimation.min.js").wait(function(){				
 				jzUtils.trigger({
 					"name": "moduleAnimation.subscribe",
 					"base":Site
-				});
-				
+				});				
 				
 				jzUtils.run({
 					"name": "moduleAnimation.scroll",
 					"base":Site
 				});
-				
-				
 				jzUtils.run({
 					"name": "moduleAnimation.publish",
 					"base":Site
 				});
-
-				
-				
 			});		
+
+	
 
 </script>
 </body>
